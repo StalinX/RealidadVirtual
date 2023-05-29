@@ -39,6 +39,17 @@
         animation="property: rotation; dur:50000; to: 360 -360 0; easing: linear; loop: true">
         </a-entity>
        
+        <a-box color="red" position="0 -5 -10" width="3" height="3" shootable></a-box>
+       
+        <a-entity camera look-controls>
+            //texto
+            <a-text value="0 meteoritos cazados" color="white" position="0 -0.1 -1" width="1" align="center">
+            </a-text>
+            //centro radio
+            <a-entity cursor="fuse: true; fuseTimeout:100" position="0 0 -1" geometry="primitive: ring; readiusInner: 0.02; radiusOuter: 0.03"
+            material="shader: flat">
+            </a-entity>
+        </a-entity>
         
     </a-scene>
 </body>
