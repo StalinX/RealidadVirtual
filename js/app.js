@@ -30,3 +30,12 @@ function initScene(){
         })
     })
 }
+
+
+AFRAME.registerComponent('shootable',{
+    init: function(){
+        this.el.addEventListener('click',() =>{
+            console.log('cazado')
+        })
+    }
+})
